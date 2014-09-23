@@ -122,13 +122,13 @@
 			<p>
 				<a href="#">miltonnunes</a>
 			</p>
-			<a class="logout_user" href="#" title="Logout">Logout</a>
+			 <a class="logout_user" href="#" title="Logout">Logout</a> 
 		</div>
 		<div class="breadcrumbs_container">
 			<article class="breadcrumbs">
 				<a href="index.html">CAMCoF</a>
 				<div class="breadcrumb_divider"></div>
-				<a class="current">Perfil</a>
+				<a class="current">Monitorização</a>
 			</article>
 		</div>
 	</section>
@@ -144,24 +144,21 @@
 		<ul class="toggle">
 			<li class="icn_edit_article"><a href="graphs.xhtml">Gráficos</a></li>
 			<li class="icn_categories"><a href="table.xhtml">Tabelas</a></li>
-			<li class="icn_settings"><a href="usersensors.xhtml">Sensores
-					Utilizados</a></li>
+			<li class="icn_settings"><a href="usersensors.xhtml">Sensores Utilizados</a></li>
 		</ul>
 		<h3>Perfil</h3>
 		<ul class="toggle">
 			<li class="icn_profile"><a href="profile.xhtml">Meu Perfil</a></li>
-			<li class="icn_security"><a href="code.xhtml">Código de
-					Utilizador</a></li>
+			<li class="icn_security"><a href="code.xhtml">Código de Utilizador</a></li>
 		</ul>
 
 		<h3>Administração</h3>
 		<ul class="toggle">
 			<li class="icn_categories"><a href="panel.xhtml">Painel</a></li>
 			<li class="icn_view_users"><a href="users.xhtml">Utilizadores</a></li>
-			<li class="icn_settings"><a href="sensors.xhtml">Sensores
-					Utilizados</a></li>
-			<li class="icn_jump_back"><a href="metrics.xhtml">Métricas</a></li>
-
+			<li class="icn_settings"><a href="sensors.xhtml">Sensores Utilizados</a></li>
+				<li class="icn_jump_back"><a href="metrics.xhtml">Métricas</a></li>
+	
 		</ul>
 
 		<footer>
@@ -177,23 +174,62 @@
 
 
 
-		<article class="module width_full">
+		<article class="module width_3_quarter">
 			<header>
-				<h3>Código de Utilização da Arquitetura</h3>
+				<h3 class="tabs_involved">Sensores Utilizados pelo Utilizador</h3>
+				<label style="font-weight:bold">Tipo: </label>
+				<select>
+					<option value="#">Todos</option>
+					<option value="#">Rato</option>
+					<option value="#">Teclado</option>
+					<option value="#">Acelarometro</option>
+				</select>
+				
 			</header>
-			<div class="module_content">
-				<div class="grid_10">
-					<div class="box round first">
-						<h4>O seu código de utilização da arquitetura é:</h4>
-						<fieldset>
-							<label>1236</label>
-						</fieldset>
-					</div>
 
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<table class="tablesorter" cellspacing="0">
+						<thead>
+							<tr>
+								<th>ID Sensor</th>
+								<th>Tipo</th>
+								<th>Periocidade</th>
+								<th>Nº Utilizações</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>125</td>
+								<td>Rato</td>
+								<td>5</td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td>167</td>
+								<td>Teclado</td>
+								<td>5</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td>389</td>
+								<td>Acelarometro</td>
+								<td>10</td>
+								<td>20</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
+				<!-- end of #tab1 -->
+
+				
+
 			</div>
+			<!-- end of .tab_container -->
+
 		</article>
-	</section>
+		<!-- end of content manager article -->
+		</section>
 </body>
 
 </html>

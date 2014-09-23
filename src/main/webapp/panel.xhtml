@@ -91,7 +91,7 @@
 <script type="text/javascript">
 
         $(document).ready(function () {
-            setupDashboardChart('chart1');
+            setupDashboardChart1('chart1');
             setupLeftMenu();
 			setSidebarHeight();
 
@@ -128,7 +128,7 @@
 			<article class="breadcrumbs">
 				<a href="index.html">CAMCoF</a>
 				<div class="breadcrumb_divider"></div>
-				<a class="current">Perfil</a>
+				<a class="current">Administração</a>
 			</article>
 		</div>
 	</section>
@@ -176,23 +176,131 @@
 	<section id="main" class="column">
 
 
-
 		<article class="module width_full">
 			<header>
-				<h3>Código de Utilização da Arquitetura</h3>
+				<h3>Utilização Arquitetura</h3>
 			</header>
 			<div class="module_content">
 				<div class="grid_10">
 					<div class="box round first">
-						<h4>O seu código de utilização da arquitetura é:</h4>
-						<fieldset>
-							<label>1236</label>
-						</fieldset>
+						<h2>Últimos 7 dias</h2>
+						<div class="block">
+							<div id="chart1"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="clear"></div>
+			</div>
+		</article>
+		<!-- end of stats article -->
+
+
+
+		<article class="module width_3_quarter">
+			<header>
+				<h3 class="tabs_involved">Sensores em utilização</h3>
+
+			</header>
+
+
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<table class="tablesorter" cellspacing="0">
+
+						<thead>
+							<tr>
+								<th>Utilizador</th>
+								<th>Endereço</th>
+								<th>ID Sensor</th>
+								<th>Tipo de Dados</th>
+								<th>Data Início</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>milton52</td>
+								<td>63520211</td>
+								<td>286.2602047</td>
+								<td>63520211</td>
+								<td>63520211</td>
+							</tr>
+							<tr>
+								<td>milton52</td>
+								<td>63520211</td>
+								<td>286.2602047</td>
+								<td>63520211</td>
+								<td>63520211</td>
+							</tr>
+							<tr>
+								<td>milton52</td>
+								<td>63520211</td>
+								<td>286.2602047</td>
+								<td>63520211</td>
+								<td>63520211</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- end of #tab1 -->
+
+
+
+			</div>
+			<!-- end of .tab_container -->
+
+		</article>
+
+		<article class="module width_quarter">
+			<header>
+				<h3>Dados:</h3>
+			</header>
+			<div class="message_list">
+				<div class="module_content">
+					<div class="message">
+
+						<p>
+							<strong>Nº Utilizadores: </strong>
+						</p>
+						<p>1347.123</p>
+					</div>
+					<div class="message">
+
+						<p>
+							<strong>Nº Sensores: </strong>
+						</p>
+						<p>3457.376</p>
 					</div>
 
+					<div class="message">
+
+						<p>
+							<strong>Nº de métricas: </strong>
+						</p>
+						<p>24-08-2014 19:37:21</p>
+					</div>
+					<div class="message">
+
+						<p>
+							<strong>Nº Monitorizações: </strong>
+						</p>
+						<p>24-08-2014 15:10:05</p>
+					</div>
+					<div class="message">
+
+						<p>
+							<strong>Média Monitorizações/Utilizador: </strong>
+						</p>
+						<p>24-08-2014 15:10:05</p>
+					</div>
 				</div>
 			</div>
 		</article>
+
+
+
+
 	</section>
 </body>
 

@@ -128,7 +128,7 @@
 			<article class="breadcrumbs">
 				<a href="index.html">CAMCoF</a>
 				<div class="breadcrumb_divider"></div>
-				<a class="current">Perfil</a>
+				<a class="current">Administração</a>
 			</article>
 		</div>
 	</section>
@@ -177,22 +177,72 @@
 
 
 
-		<article class="module width_full">
+		<article class="module width_3_quarter">
 			<header>
-				<h3>Código de Utilização da Arquitetura</h3>
-			</header>
-			<div class="module_content">
-				<div class="grid_10">
-					<div class="box round first">
-						<h4>O seu código de utilização da arquitetura é:</h4>
-						<fieldset>
-							<label>1236</label>
-						</fieldset>
-					</div>
+				<h3 class="tabs_involved">Sensores Utilizados na Arquitetura</h3>
+				<label style="font-weight: bold">Tipo: </label> <select>
+					<option value="#">Todos</option>
+					<option value="#">Rato</option>
+					<option value="#">Teclado</option>
+					<option value="#">Acelarometro</option>
+				</select>
 
+			</header>
+
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<table class="tablesorter" cellspacing="0">
+						<thead>
+							<tr>
+								<th>ID Sensor</th>
+								<th>Tipo</th>
+								<th>Periocidade</th>
+								<th>Nº Utilizações</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>125</td>
+								<td>Rato</td>
+								<td>5</td>
+								<td>26</td>
+							</tr>
+							<tr>
+								<td>345</td>
+								<td>Rato</td>
+								<td>8</td>
+								<td>6</td>
+							</tr>
+							<tr>
+								<td>167</td>
+								<td>Teclado</td>
+								<td>5</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td>389</td>
+								<td>Acelarometro</td>
+								<td>10</td>
+								<td>20</td>
+							</tr>
+							<tr>
+								<td>15</td>
+								<td>Teclado</td>
+								<td>5</td>
+								<td>11</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
+				<!-- end of #tab1 -->
+
+
+
 			</div>
+			<!-- end of .tab_container -->
+
 		</article>
+		<!-- end of content manager article -->
 	</section>
 </body>
 

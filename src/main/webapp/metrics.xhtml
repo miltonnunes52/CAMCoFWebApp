@@ -122,13 +122,13 @@
 			<p>
 				<a href="#">miltonnunes</a>
 			</p>
-			<a class="logout_user" href="#" title="Logout">Logout</a>
+			 <a class="logout_user" href="#" title="Logout">Logout</a> 
 		</div>
 		<div class="breadcrumbs_container">
 			<article class="breadcrumbs">
 				<a href="index.html">CAMCoF</a>
 				<div class="breadcrumb_divider"></div>
-				<a class="current">Perfil</a>
+				<a class="current">Administração</a>
 			</article>
 		</div>
 	</section>
@@ -144,24 +144,20 @@
 		<ul class="toggle">
 			<li class="icn_edit_article"><a href="graphs.xhtml">Gráficos</a></li>
 			<li class="icn_categories"><a href="table.xhtml">Tabelas</a></li>
-			<li class="icn_settings"><a href="usersensors.xhtml">Sensores
-					Utilizados</a></li>
+			<li class="icn_settings"><a href="usersensors.xhtml">Sensores Utilizados</a></li>
 		</ul>
 		<h3>Perfil</h3>
 		<ul class="toggle">
 			<li class="icn_profile"><a href="profile.xhtml">Meu Perfil</a></li>
-			<li class="icn_security"><a href="code.xhtml">Código de
-					Utilizador</a></li>
+			<li class="icn_security"><a href="code.xhtml">Código de Utilizador</a></li>
 		</ul>
 
 		<h3>Administração</h3>
 		<ul class="toggle">
 			<li class="icn_categories"><a href="panel.xhtml">Painel</a></li>
 			<li class="icn_view_users"><a href="users.xhtml">Utilizadores</a></li>
-			<li class="icn_settings"><a href="sensors.xhtml">Sensores
-					Utilizados</a></li>
+			<li class="icn_settings"><a href="sensors.xhtml">Sensores Utilizados</a></li>
 			<li class="icn_jump_back"><a href="metrics.xhtml">Métricas</a></li>
-
 		</ul>
 
 		<footer>
@@ -179,21 +175,64 @@
 
 		<article class="module width_full">
 			<header>
-				<h3>Código de Utilização da Arquitetura</h3>
+				<h3 class="tabs_involved">Métricas Integradas na Arquitetura</h3>
+				
 			</header>
-			<div class="module_content">
-				<div class="grid_10">
-					<div class="box round first">
-						<h4>O seu código de utilização da arquitetura é:</h4>
-						<fieldset>
-							<label>1236</label>
-						</fieldset>
-					</div>
 
+			<div class="tab_container">
+				<div id="tab1" class="tab_content">
+					<table class="tablesorter" cellspacing="0">
+						<thead>
+							<tr>
+								<th>ID</th>
+								<th>Tipo</th>
+								<th>Descrição</th>
+								<th>URL</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Teclado</td>
+								<td>Key Down Time</td>
+								<td>http://islab.di.uminho.pt:36001/MetricsReport/rest/Metrics/keydowntime</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Teclado</td>
+								<td>Time Between Keys</td>
+								<td>http://islab.di.uminho.pt:36001/MetricsReport/rest/Metrics/timebetweenkeys</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Rato</td>
+								<td>Mouse Velocity</td>
+								<td>http://islab.di.uminho.pt:36001/MetricsReport/rest/Metrics/mousevelocity</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Rato</td>
+								<td>Mouse Accelaration</td>
+								<td>http://islab.di.uminho.pt:36001/MetricsReport/rest/Metrics/mouseaccelaration</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Rato</td>
+								<td>Absolute Sum of Angles</td>
+								<td>http://islab.di.uminho.pt:36001/MetricsReport/rest/Metrics/absolutesumofangles</td>
+							</tr>
+							</tbody>
+					</table>
 				</div>
+				<!-- end of #tab1 -->
+
+
+
 			</div>
+			<!-- end of .tab_container -->
+
 		</article>
-	</section>
+		</section>
 </body>
 
 </html>
